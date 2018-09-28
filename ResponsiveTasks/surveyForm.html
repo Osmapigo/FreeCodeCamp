@@ -1,0 +1,55 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<body>
+    <h1 id="title">Survey form</h1>
+
+    <div id="main-body">
+        <p style="text-align:center" id="description"> This is an small form</p>
+        <form id="survey-form">
+          <div>
+            <label id="name-label">Nombre: </label>
+            <input id="name" type="text" placeholder="Enter your name" required>
+          </div>
+          <div>
+            <label id="email-label">Correo: </label>
+            <input id="email" type="email" placeholder="Enter your email" required>
+          </div>
+          <div>
+            <label id="number-label">Celular: </label>
+            <input id="number" type="number" placeholder="Enter your number" required min=1 max=2000>
+          </div>
+          <div>
+            <label id="number-label">Tu carro: </label>
+             <select id="dropdown">
+              <option value="volvo">Volvo</option>
+              <option value="mercedes">Mercedes</option>
+              <option value="audi">Audi</option>
+            </select> 
+          </div>
+          <div>
+            <ul style="list-style: none;">
+              <label id="">Cosas por mejorar </label>
+              <li><label><input name="prefer" value="1" type="checkbox" class="userRatings">Front-end Projects</label></li>
+              <li><label><input value="leer" type="checkbox">Leer</label></li>
+              <li><label><input value="cocinar" type="checkbox">Cocinar</label></li>
+            </ul>
+          </div>
+          <div>
+            <ul style="list-style: none;">
+              <label id="">Cosas por hice hoy </label>
+              <li class="radio"><label><input value="1" type="radio" name="eb">Leer</label></li>
+              <li class="radio"><label><input value="2" type="radio" name="eb">Cocinar</label></li>
+              <li class="radio"><label><input value="3" type="radio" name="eb">Front-end Projects</label></li>
+            </ul>
+          </div>
+          <div>
+            <label id="comments"> Enter your comments</label>
+            <textarea id="comments" placeholder="Dame tus comentarios"></textarea>
+          </div>
+          <div>
+            <button id="submit" type="submit">Click para enviar </button>
+            <button id="submit" type="reset">Reset</button>
+          </div>
+      </form>
+    </div>
+</body>
